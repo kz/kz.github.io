@@ -1,0 +1,3 @@
+[submodule "lifx-pebble-config"]
+	path = lifx-pebble-config
+	url = https://github.com/kz/lifx-pebble-config.git
