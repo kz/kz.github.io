@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeChat Test</title>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input id="wechatTest" name="wechatTest" placeholder="WeChat Test" type="text"> <input id='submit_button' type='button' value='Save Data'> 
+        <script type="text/javascript">
+			var submitButton = document.getElementById('submit_button');
+			submitButton.addEventListener('click', function () {
+				localStorage.setItem("wechatTest", $('#wechatTest').val());
+			});
+
+			(function () {
+				$('#wechatTest').val(localStorage.getItem("wechatTest"));
+			})();
+        </script> 
+    </form>
+</body>
+</html>
